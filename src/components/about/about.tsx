@@ -3,11 +3,17 @@ function About() {
     <>
       {/* Full background image section with intro */}
       <section
-        className="relative w-full h-screen flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: 'url(/header-background.png)' }}
+        className="relative w-full h-screen flex items-center justify-center overflow-hidden"
         id="about"
       >
-        <div className="backdrop-blur-md bg-white/30 rounded-xl shadow-lg p-10 w-11/12 max-w-6xl mx-auto border border-white/40 px-8 md:px-16">
+        {/* Background image */}
+        <img
+          src="header-background.png"
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        {/* Foreground content */}
+        <div className="relative z-10 backdrop-blur-md bg-white/30 rounded-xl shadow-lg p-10 w-11/12 max-w-6xl mx-auto border border-white/40 px-8 md:px-16">
           <h1 className="text-3xl font-bold mb-4 text-gray-900">Hi, I'm Sahil Gupta</h1>
           <p className="text-lg text-gray-800">
             Senior Software Engineer with 10 years of experience building scalable backend systems, cloud-native applications, and full-stack solutions. Led critical initiatives at Adobe in localization, search optimization, and microservices orchestration, improving performance and engagement for millions of users globally. Strong expertise in Java, Spring Boot, React, Kafka, and cloud infrastructure.
