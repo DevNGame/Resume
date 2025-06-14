@@ -5,7 +5,7 @@ function Contact() {
       <div className="flex gap-10">
         {/* GitHub */}
         <a
-          href="https://github.com/your-github-username"
+          href="https://github.com/devngame"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-100 hover:text-orange-500 transition-colors duration-200"
@@ -17,7 +17,7 @@ function Contact() {
         </a>
         {/* Instagram */}
         <a
-          href="https://instagram.com/your-instagram-username"
+          href="https://instagram.com/ssharkist"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-100 hover:text-pink-500 transition-colors duration-200"
@@ -29,7 +29,7 @@ function Contact() {
         </a>
         {/* Phone */}
         <a
-          href="tel:+1234567890"
+          href="tel:+91 7503247437"
           className="text-gray-100 hover:text-green-500 transition-colors duration-200"
           aria-label="Phone"
         >
