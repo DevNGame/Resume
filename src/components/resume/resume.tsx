@@ -80,15 +80,15 @@ function Resume() {
     return (
         <section id="resume" className="max-w-5xl mx-auto pt-16 bg-gray-50 min-h-screen">
             {resumeData.map((section) => (
-                <div key={section.title} className="flex mb-16">
+                <div key={section.title} className="flex flex-col md:flex-row mb-16">
                     {/* Fixed-width title column */}
-                    <div className="w-56 flex-shrink-0 flex items-start">
+                    <div className="w-full md:w-56 flex-shrink-0 flex items-start">
                         <div className="text-2xl font-bold text-gray-900 tracking-wide pl-2 pt-2 uppercase">
                             {section.title}
                         </div>
                     </div>
                     {/* Flexible details column */}
-                    <div className="flex-1 border-l-4 border-orange-500 pl-10 bg-white rounded-b-lg shadow-sm">
+                    <div className="flex-1 border-l-0 md:border-l-4 border-orange-500 pl-0 md:pl-10 bg-white rounded-b-lg shadow-sm">
                         {section.title === "Skills" ? (
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-4">
                                 {section.data.map((item, idx) => (
